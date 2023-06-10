@@ -48,3 +48,4 @@ sudo ip netns exec $NS1 ping $IP2
 #Cleanup
 sudo ip netns delete $NS1
 sudo ip netns delete $NS2
+sudo ip link delete $VETH_BR type bridge
